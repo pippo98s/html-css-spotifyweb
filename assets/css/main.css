@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+/* scrollbar works only with chrome*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+/* /scrollbar */
+
 .content{
   width: 100%;
   height: calc(100vh - 90px);
@@ -20,6 +31,7 @@
   width: 85%;
   height: 100%;
   background-color: green;
+  overflow-y: scroll;
 }
 
 .player{
