@@ -61,7 +61,6 @@ a:hover{
   flex-direction: column;
   height: 115px;
   justify-content: space-around;
-
 }
 
 .home-nav li:first-child{
@@ -80,6 +79,32 @@ a:hover{
 .home-nav img{
   height: 25px;
   padding-left: 20px;
+}
+
+/* nav-bottom */
+.playlist h6:hover{
+  cursor: default;
+}
+.playlist a{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.playlist a:hover{
+  color: #fff;
+}
+
+.list-playlist{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  max-height: 200px;
+}
+
+.list-playlist li:hover{
+  color: #fff;
+  cursor: default;
 }
 
 .download{
