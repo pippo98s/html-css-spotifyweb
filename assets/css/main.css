@@ -107,6 +107,7 @@ a:hover{
 .music-section{
   width: calc(100% - 200px);
   height: 100%;
+  padding-bottom: 50px;
   background-image: linear-gradient(to right bottom, rgb(50, 168, 154), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   overflow-y: scroll;
 }
@@ -169,7 +170,6 @@ a:hover{
 
 .list-music{
   display: flex;
-
   flex-wrap: wrap;
 }
 
