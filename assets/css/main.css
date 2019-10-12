@@ -220,6 +220,39 @@ a:hover{
   color: #fff;
 }
 
+/* font play on .list-music-items */
+.link_play{
+  position: relative;
+}
+
+.click_play{
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: translate(-40%, -40%);
+  transform: scale(2);
+  color: #fff;
+  padding: 10px;
+  border: 0.5px solid #fff;
+  border-radius: 50%;
+  display: none;
+  z-index: 1;
+}
+
+.list-music-items:hover .click_play{
+  display: block;
+}
+
+.click_play:hover{
+  transform: scale(2.2);
+  cursor: default;
+}
+
+.list-music-items:hover img{
+  filter: opacity(0.5);
+}
+/* /font play on .list-music-items */
+
 /* footer */
 .player{
   width: 100%;
