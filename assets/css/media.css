@@ -1,0 +1,77 @@
+@media screen and (min-width: 991px) {
+  .home-nav .small_device{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .home{
+    width: 100px;
+  }
+
+  #logo{
+    justify-content: center;
+  }
+
+  #logo img:last-child{
+    display: block;
+  }
+
+  #logo img:first-child,
+  .home-nav .large_device,
+  .playlist{
+    display: none;
+  }
+
+  .home-nav .small_device{
+    display: block;
+  }
+
+  .music-section{
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 767px){
+  .music-nav{
+    margin-bottom: 40px;
+  }
+
+  .music-nav-item{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px){
+  /* music section */
+  .list-music-items img{
+    width: 160px;
+    height: 160px;
+  }  
+
+  /* player */
+  .track,
+  .music-player,
+  .volume{
+    display: none;
+  }
+
+  .left-side{
+    display: block;
+  }
+
+  .middle-side{
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right-side{
+    display: block;
+  }
+}

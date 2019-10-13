@@ -2,12 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link icon -->
     <link rel="shortcut icon" type="images/x-icon" href="https://open.scdn.co/static/images/favicon.png">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- link media -->
+    <link rel="stylesheet" href="assets/css/media.css">
     <title>Spotify - Home sf</title>
   </head>
   <body>
@@ -19,28 +22,45 @@
           <!-- logo -->
           <div id="logo" class="container">
             <img src="assets/img/logo-text.svg" alt="img">
+            <img src="assets/img/logo.svg" alt="">
           </div>
           <!-- nav -->
           <ul class="home-nav">
-            <li>
+            <li class="large_device">
               <a href="#">
                 <img src="assets/img/home-white.svg" alt="img">
                 Home
               </a>
             </li>
-            <li>
+            <li class="large_device">
               <a href="#">
                 <img src="assets/img/search.svg" alt="img">
                 Search
               </a>
             </li>
-            <li>
+            <li class="large_device">
               <a href="#">
                 <img src="assets/img/library.svg" alt="img">
                 Your Library
               </a>
             </li>
+            <li class="small_device">
+              <a href="#">
+                <img src="assets/img/home-white.svg" alt="img">
+              </a>
+            </li>
+            <li class="small_device">
+              <a href="#">
+                <img src="assets/img/search.svg" alt="img">
+              </a>
+            </li>
+            <li class="small_device">
+              <a href="#">
+                <img src="assets/img/library.svg" alt="img">
+              </a>
+            </li>
           </ul>
+
         </div>
         <!-- nav-bottom -->
         <div class="nav-bottom">
@@ -153,6 +173,10 @@
                 </h6>
               </li>
             </ul>
+            <!-- hamburger -->
+            <a href="#" class="hamburger">
+              <i class="fas fa-bars"></i>
+            </a>
           </div>
         </div>
         <!-- /main navbar -->
@@ -270,6 +294,7 @@
     </div>
     <!-- footer -->
     <div class="player">
+      <!-- player for large-device -->
       <div class="track">
         <div class="mini-cover-track">
         </div>
@@ -309,6 +334,22 @@
           </div>
         </div>
       </div>
+      <!-- /player for large-device -->
+      <!-- player for small-device -->
+      <div class="left-side">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <div class="middle-side">
+          <p>Time</p>
+          <i class="fas fa-circle"></i>
+          <p>Pink Floyd</p>
+      </div>
+      <div class="right-side">
+        <i class="far fa-play-circle"></i>
+      </div>
+
+      <!-- /player for small-device -->
+
 
     </div>
 

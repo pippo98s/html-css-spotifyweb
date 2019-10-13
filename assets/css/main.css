@@ -56,6 +56,10 @@ a:hover{
   max-width: 75%;
 }
 
+#logo img:last-child{
+  display: none;
+}
+
 .home-nav{
   display: flex;
   flex-direction: column;
@@ -148,6 +152,7 @@ a:hover{
   align-items: center;
   min-height: 30px;
   margin-top: 40px;
+  position: relative;
 }
 
 .music-nav-item{
@@ -169,6 +174,15 @@ a:hover{
 
 .music-nav-item li:hover{
   color: #fff;
+}
+
+.hamburger{
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
 }
 /* /main navbar */
 
@@ -398,4 +412,30 @@ a:hover{
 .line-player:hover .cerchio,
 .volume-bar:hover .cerchio{
   display: block;
+}
+/* player for small-device */
+
+.left-side{
+  display: none;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.middle-side{
+  display: none;
+}
+
+.middle-side p{
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+.middle-side i{
+  transform: scale(0.5);
+}
+
+.right-side{
+  display: none;
+  margin-right: 20px;
+  font-size: 25px;
 }
