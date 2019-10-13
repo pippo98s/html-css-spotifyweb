@@ -117,12 +117,17 @@ a:hover{
   cursor: pointer;
 }
 
-.download p{
+.download p,
+.user p{
   display: inline-block;
 }
 
 .user{
   color: #fff;
+}
+
+.user i{
+  font-size: 20px;
 }
 
 .user:hover{
