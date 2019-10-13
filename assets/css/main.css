@@ -175,7 +175,7 @@ a:hover{
 .music-nav-item li:hover{
   color: #fff;
 }
-
+/* dropdown */
 .hamburger{
   color: #fff;
   font-size: 25px;
@@ -184,6 +184,24 @@ a:hover{
   top: 0;
   display: none;
 }
+
+.hamburger:hover{
+  color: #fff;
+}
+
+.my_dropdown{
+  display: none;
+}
+
+.my_dropdown li{
+  margin: 0 3px;
+}
+
+.my_dropdown li:hover{
+  color: #fff;
+}
+
+
 /* /main navbar */
 
 /* list music */
