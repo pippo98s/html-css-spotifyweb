@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to right bottom, rgb(50, 168, 154), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  height: 100vh;
+}
+
+a, a:hover{
+  color: inherit;
+}
+
+i{
+  color: #fff;
+}
+
+.bonus{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.width-80{
+  width: 80%;
+  margin: auto;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.top p{
+  color: #b3b3b3;
+}
+
+.middle{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.middle div{
+  width: 100%;
+  height: 300px;
+  background-image: url(https://www.panorama.it/wp-content/uploads/2014/12/The-dark-side-o-f-the-moon-1030x615.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+.title p{
+  color: #fff;
+}
+
+.top-music-player{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.top-music-player p{
+  color: #fff;
+  margin: 0 8px;
+}
+
+.line-player{
+  width: 100%;
+  height: 0px;
+  border: 2px solid #555;
+  border-radius: 2px;
+  position: relative;
+}
+
+.line-music{
+  width: 33%;
+  height: 0px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.line-player:hover .line-music,
+.volume-bar:hover .line-volume{
+  border-color: green;
+}
+
+.cerchio{
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  display: none;
+}
+
+.line-player:hover .cerchio{
+  display: block;
+}
+
+.bottom-music-player{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-music-player i{
+  font-size: 20px;
+}
+
+.fine{
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 650px) {
+  body{
+    display: none;
+  }
+}
