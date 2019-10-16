@@ -8,6 +8,19 @@
 
   .home{
     width: 100px;
+    animation: reduce 0.3s linear;
+  }
+
+  @keyframes reduce {
+    0%{
+      width: 200px;
+    }
+    50%{
+      width: 150px;
+    }
+    100%{
+      width: 100px;
+    }
   }
 
   #logo{
