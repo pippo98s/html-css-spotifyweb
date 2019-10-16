@@ -351,8 +351,18 @@ a:hover{
   color: #555;
 }
 
+.top-music-player i:hover{
+  color: #fff;
+  cursor: not-allowed;
+}
+
 #pause{
   transform: scale(1.5);
+  transition: 0.2s;
+}
+
+#pause:hover{
+  transform: scale(2);
 }
 
 .bottom-music-player{
