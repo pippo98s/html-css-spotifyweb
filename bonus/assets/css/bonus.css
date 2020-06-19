@@ -19,6 +19,7 @@ i{
 
 .bonus{
   height: 100%;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
 }
@@ -41,7 +42,6 @@ i{
 
 .middle{
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
 }
@@ -123,8 +123,8 @@ i{
   justify-content: space-between;
 }
 
-@media screen and (min-width: 650px) {
-  body{
+/* @media screen and (min-width: 650px) {
+  .bonus{
     display: none;
   }
-}
+} */
